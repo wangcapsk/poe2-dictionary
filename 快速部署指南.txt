@@ -1,0 +1,100 @@
+╔════════════════════════════════════════════════════════════════╗
+║              🚀 Netlify 快速部署指南（5分钟上线）              ║
+╚════════════════════════════════════════════════════════════════╝
+
+【方式一：拖拽部署（最简单）】⭐⭐⭐⭐⭐
+
+步骤 1️⃣：运行准备脚本
+   • 双击 "准备部署.bat" 文件
+   • 脚本会自动创建 netlify-deploy 文件夹
+   • 并复制所有必需文件
+
+步骤 2️⃣：访问 Netlify
+   • 打开浏览器
+   • 访问：https://www.netlify.com
+   • 点击 Sign up（用GitHub账号注册最方便）
+
+步骤 3️⃣：拖拽部署
+   • 登录后，在控制面板找到拖放区域
+   • 将 netlify-deploy 文件夹拖到页面上
+   • 等待上传（大约30秒）
+
+步骤 4️⃣：完成！
+   • 显示 "Published" 表示成功
+   • 点击网址访问你的网站
+   • 网址格式：https://随机名称.netlify.app
+
+步骤 5️⃣：修改网站名称（可选）
+   • 点击 Site settings
+   • 找到 Change site name
+   • 改为：poe2-dictionary
+   • 新网址：https://poe2-dictionary.netlify.app
+
+
+【方式二：Git自动部署（推荐进阶）】⭐⭐⭐⭐
+
+步骤 1️⃣：推送到GitHub
+   打开PowerShell，执行：
+   
+   cd d:\po2
+   git init
+   git add .
+   git commit -m "首次提交"
+   git remote add origin https://github.com/你的用户名/poe2-dictionary.git
+   git push -u origin main
+
+步骤 2️⃣：在Netlify导入
+   • 访问 https://www.netlify.com 并登录
+   • 点击 "Add new site" → "Import an existing project"
+   • 选择 GitHub
+   • 选择你的仓库 poe2-dictionary
+   • 点击 Deploy site
+
+步骤 3️⃣：自动部署
+   以后每次更新，只需：
+   
+   git add .
+   git commit -m "更新数据"
+   git push
+   
+   Netlify会自动重新部署！
+
+
+【部署后必做】✅
+
+□ 测试网站功能（搜索、筛选、繁体切换）
+□ 替换 index.html 中的 yourwebsite.com 为实际网址
+□ 提交到搜索引擎（Google、百度、必应）
+□ 在游戏社区分享链接
+□ 添加Google Analytics统计代码
+
+
+【需要帮助？】
+
+📖 详细教程：Netlify部署教程.md
+📋 文件清单：netlify部署文件清单.txt
+🌐 Netlify文档：https://docs.netlify.com
+
+
+【免费额度】💰
+
+✅ 100GB流量/月（约10万次访问）
+✅ 无限站点数量
+✅ 自动HTTPS
+✅ 全球CDN加速
+✅ 自定义域名
+
+完全够用！🎉
+
+
+【预计时间】⏱️
+
+拖拽部署：5分钟
+Git部署：10分钟（首次）
+
+
+═══════════════════════════════════════════════════════════════
+
+🎮 让POE2玩家更轻松地查询游戏术语！
+
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,30 @@
+# 依赖
+node_modules/
+.npm
+
+# 临时文件
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 测试文件
+test/
+*.test.js
+
+# 不需要部署的文件
+需求.md
+SEO优化说明.md
+分类*.md
+分类*.txt
+项目完成总结.md
+快速开始.md
+analyze_*.js
+category_analysis.js
+parse_*.js

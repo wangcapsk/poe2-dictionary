@@ -1,0 +1,13 @@
+# 允许所有搜索引擎爬取
+User-agent: *
+Allow: /
+
+# 网站地图位置
+Sitemap: https://yourwebsite.com/sitemap.xml
+
+# 爬取延迟（可选，单位：秒）
+Crawl-delay: 1
+
+# 禁止爬取的目录（如果有的话）
+# Disallow: /admin/
+# Disallow: /private/

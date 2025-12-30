@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>流放之路2中英文对照表 | POE2词典翻译查询工具 - Path of Exile 2 Dictionary</title>
+    <meta name="description" content="流放之路2(Path of Exile 2/POE2)完整中英文对照表，收录4000+游戏术语、技能、装备、词条、货币、怪物翻译。支持简繁体中文，快速搜索查询POE2游戏内容。">
+    <meta name="keywords" content="流放之路2,POE2,Path of Exile 2,中英文对照,翻译,词典,技能,装备,词条,货币,游戏术语,繁体中文,简体中文">
+    <meta name="author" content="POE2 Dictionary">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Chinese">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:title" content="流放之路2中英文对照表 | POE2词典翻译查询工具">
+    <meta property="og:description" content="收录4000+条POE2游戏术语，支持中英文搜索，涵盖技能、装备、词条、货币等全部内容。">
+    <meta property="og:image" content="https://yourwebsite.com/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourwebsite.com/">
+    <meta property="twitter:title" content="流放之路2中英文对照表 | POE2词典翻译查询工具">
+    <meta property="twitter:description" content="收录4000+条POE2游戏术语，支持中英文搜索，涵盖技能、装备、词条、货币等全部内容。">
+    <meta property="twitter:image" content="https://yourwebsite.com/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "流放之路2中英文对照表",
+      "alternateName": "POE2 Dictionary",
+      "url": "https://yourwebsite.com/",
+      "description": "流放之路2(Path of Exile 2)完整中英文对照表，收录4000+游戏术语翻译查询工具",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "inLanguage": ["zh-CN", "zh-TW", "en-US"],
+      "about": {
+        "@type": "VideoGame",
+        "name": "Path of Exile 2",
+        "gamePlatform": ["PC", "PlayStation", "Xbox"],
+        "publisher": {
+          "@type": "Organization",
+          "name": "Grinding Gear Games"
+        }
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .language-selector {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .lang-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border: 2px solid var(--border-color);
+            background: var(--bg-color);
+            color: var(--text-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            user-select: none;
+        }
+        .lang-toggle:hover {
+            border-color: var(--primary-color);
+            background: rgba(139, 92, 246, 0.1);
+        }
+        .lang-toggle input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: var(--primary-color);
+        }
+        .col-traditional {
+            display: none;
+        }
+        .col-traditional.show {
+            display: table-cell;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 流放之路2 中英文对照表 (POE2 Dictionary)</h1>
+            <p class="subtitle">Path of Exile 2 中英文翻译查询工具 - 收录4000+游戏术语</p>
+            <p class="subtitle">简体中文 | 繁體中文 | English - 支持技能、装备、词条、货币全分类搜索</p>
+        </header>
+
+        <div class="search-section">
+            <div class="language-selector">
+                <label class="lang-toggle">
+                    <input type="checkbox" id="showTraditionalToggle">
+                    <span>显示繁體中文</span>
+                </label>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="搜索POE2技能、装备、词条、货币..." aria-label="搜索流放之路2游戏内容">
+                <button id="searchBtn" aria-label="搜索按钮">🔍 搜索</button>
+            </div>
+            
+            <div class="filter-section">
+                <label>分类筛选：</label>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">全部</button>
+                    <button class="filter-btn" data-category="skills">技能</button>
+                    <button class="filter-btn" data-category="items">装备</button>
+                    <button class="filter-btn" data-category="mods">词条</button>
+                    <button class="filter-btn" data-category="mechanics">机制</button>
+                    <button class="filter-btn" data-category="currency">货币</button>
+                    <button class="filter-btn" data-category="monsters">怪物</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <span id="resultCount">共 <strong>0</strong> 条结果</span>
+            <button id="clearBtn">清除筛选</button>
+        </div>
+
+        <div class="table-container">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>分类</th>
+                        <th>英文</th>
+                        <th>简体中文</th>
+                        <th class="col-traditional">繁體中文</th>
+                        <th>备注</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- 数据将通过JavaScript动态加载 -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <p>😔 没有找到匹配的结果</p>
+            <p>尝试使用不同的关键词或筛选条件</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于本站</h3>
+                <p>流放之路2(POE2)最全面的中英文对照词典，收录技能宝石、装备道具、天赋词条、通货物品、怪物名称等4000+条游戏术语翻译。</p>
+            </div>
+            <div class="footer-section">
+                <h3>数据来源</h3>
+                <p>数据来自官方游戏文件与社区贡献，持续更新中。支持简体中文、繁體中文、English三语对照查询。</p>
+            </div>
+            <div class="footer-section">
+                <h3>关键词</h3>
+                <p>POE2翻译 | 流放之路2词典 | Path of Exile 2 中文 | 游戏术语对照 | 技能翻译 | 装备名称</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Path of Exile 2 © Grinding Gear Games | 本站为非官方玩家工具</p>
+            <p>最后更新时间：2024年12月 | 数据版本：Early Access</p>
+        </div>
+    </footer>
+
+    <script src="data_multilang.js"></script>
+    <script src="app_multilang.js"></script>
+</body>
+</html>
