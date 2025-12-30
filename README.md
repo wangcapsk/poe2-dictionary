@@ -112,12 +112,6 @@ poe2-dictionary/
 - [poe2db.tw](https://poe2db.tw) - 数据支持
 - 所有贡献者和玩家社区
 
-## 📮 联系方式
-
-- Issues: [GitHub Issues](https://github.com/你的用户名/poe2-dictionary/issues)
-- Email: your.email@example.com
-- Discord: [加入我们的Discord](https://discord.gg/yourserver)
-
 ## 🔗 相关链接
 
 - [Path of Exile 2 官网](https://pathofexile2.com)
@@ -129,3 +123,4 @@ poe2-dictionary/
 ⭐ 如果这个项目对你有帮助，请给个Star支持一下！
 
 **Path of Exile 2 © Grinding Gear Games | 本站为非官方玩家工具**
+
