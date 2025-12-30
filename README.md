@@ -1,1 +1,1 @@
-# oe2-dictionary
+# poe2-dictionary
